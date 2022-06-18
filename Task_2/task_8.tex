@@ -1,0 +1,127 @@
+\documentclass[14pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+	{\vspace*{-3cm}\huge \bfseries Отчёт по заданию №8.}
+	\newline
+	\begin{flushleft}
+		{\hspace{-2cm}\bf \Large 1) Вычисление опорной функции ромба.}
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Опишем множество исходной задачи:}		
+		\newline
+		\newline
+		{\hspace*{-1cm}\large $R_1$ = \{$\forall$ $x_1$, $x_2$ : |$x_1$| + |$x_2$| $\leq$ 1   \}.}
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Для решения данной задачи необходимо максимизировать скалярное 
+		\newline \hspace*{-2cm}  произведение $\langle l, x \rangle$ = $l_1$$x_1$ + $l_2$$x_2$.}
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Очевидно, что максимум достигается на границе исходного множества,
+		\newline \hspace*{-2cm} следовательно:}
+		\newline 
+		\newline
+		{\hspace*{-1cm}\Large $\rho$($l$|$R_1$) = $max\{|l_1|,|l_2|\}$. }
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Теперь рассмотрим общую постановку решения данной задачи, т.е. 
+		\newline \hspace*{-2cm} с множеством $R_T$ c произвольным центром z = (x,y). Воспользовавшись \newline \hspace*{-2cm} свойством опорной функции:}
+		\newline
+		\newline
+		{\hspace*{-1cm}\Large  $\rho$($l$|$A + z$) = $\langle l, z \rangle$ + $\rho$($l$|$A$) \quad $\forall$ z $\in$ X, A $\subset$ X  }
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Получим:}
+		\newline
+		\newline
+		{\hspace*{-1cm}\Large \underline {$\rho$(l|$R_T$) = $\langle l, z \rangle$ + $T \cdot max\{|l_1|,|l_2|\}$. }}
+		
+	\end{flushleft}
+	\newpage
+	\begin{flushleft}
+		{\vspace*{-3cm} \hspace{-2cm}\bf \Large  2) Вычисление опорной функции квадрата.}
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Опишем множество исходной задачи:}		
+		\newline
+		\newline
+		{\hspace*{-1cm}\Large $S_1$ = \{$\forall$ $x_1$, $x_2$ : max\{|$x_1$|,|$x_2$|\} $\leq$ 1   \}.}
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Для решения данной задачи необходимо максимизировать скалярное 
+		 \newline \hspace*{-2cm}  произведение \Large{$\langle l, x \rangle$ = $l_1$$x_1$ + $l_2$$x_2$}.}
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Очевидно максимум будет достигаться на вершинах 
+		 \newline	\hspace*{-2cm} данного множества. Иными словами - на вершинах этого квадрата. }
+		\newline
+		\newline
+		{\hspace*{-1cm}\Large $\rho$($l$|$S_1$) = $max\{l_1 + l_2,l_1-l_2,l_2 - l_1, -(l_1+l_2)\}$. }
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Теперь рассмотрим общую постановку решения данной задачи, т.е. 
+			\newline \hspace*{-2cm} с множеством \Large{$S_T$} c произвольным центром \Large{z = (x,y)}. \large  \newline \hspace*{-2cm} Воспользовавшись свойством опорной функции:}
+		\newline
+		\newline
+		{\hspace*{-1cm}\Large  $\rho$($l$|$A + z$) = $\langle l, z \rangle$ + $\rho$($l$|$A$) \quad $\forall$ z $\in$ X, A $\subset$ X  }
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Получим:}
+		\newline
+		\newline
+		{\hspace*{-1cm}\Large \underline {$\rho$(l|$S_T$) = $\langle l, z \rangle$ + $T \cdot max\{l_1 + l_2,l_1-l_2,l_2 - l_1, -(l_1+l_2)\}$. }}
+	\end{flushleft}
+	\newpage
+	\begin{flushleft}
+		{\vspace*{-3cm} \hspace{-2cm }\bf \Large 3) Вычисление опорной функции эллипса.}
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Рассмотрим решение задачи на единичном круге:}		
+		\newline
+		\newline
+		{\hspace*{-1cm}\Large  $E_0$ = \{$\forall$ $x_1$, $x_2$ : $x_1^2$ + $x_2^2$ $\leq$ 1   \}.}
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Положим, что x сонаправлен с \Large{$l$ }\large и его норма равна единице:  }
+		\newline
+		\newline
+		{\hspace*{-1cm} \Large $\|x\| $= 1,\quad x = c$l$, c $\geq$ 0.}
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Тогда \Large x = $\frac{l}{\|l\|}$}
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Следовательно: \Large $\rho$($l$|$E_0$) = $\langle l, x \rangle$ = $\|l\|$ .  }
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Рассмотрим теперь задачу  \Large $\forall a,b \in \mathbb{R}\backslash\{0\}$, \large и ненулевым 
+		\newline	\hspace*{-2cm}	центром z:}
+		\newline
+		\newline
+		{\hspace*{-1cm}\Large  $E_z$ = \{$\forall$ $x_1$, $x_2$ : $\frac{x_1^2}{a^2}$ + $\frac{x_2^2}{b^2}$
+		 $\leq$ 1   \}.}
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Введем матрицу \Large С = $\begin{bmatrix} a& 0\\ 0& b
+		\end{bmatrix}$ \large для удобства. 
+		 }
+		 \newline
+		 \newline
+		 {\hspace*{-2cm} \large Воспользовавшись свойством опорной функции:}
+		\newline
+		\newline
+		{\hspace*{-1cm}\Large  $\rho$($l$|$A + z$) = $\langle l, z \rangle$ + $\rho$($l$|$A$) \quad $\forall$ z $\in$ X, A $\subset$ X  }
+		\newline
+		\newline
+		{\hspace*{-2cm} \large Получим:}
+		\newline
+		\newline
+		{\hspace*{-1cm}\Large  {$\rho$($l$|$E_z$) = $\langle l, z \rangle$ + $\rho$($l$|$C\times E_0$) = $\langle l, z \rangle$ +  $\rho$($C^T \times l$|$E_0$) =} 
+		\newline\hspace*{-1cm} {= $\langle l, z \rangle$ + $\sqrt{(l_1a)^2 + (l_2b)^2}$}  }
+	\end{flushleft}
+\end{document}
